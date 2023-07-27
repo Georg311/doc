@@ -31,6 +31,7 @@ parameters:
     mailer_port: false
     mailer_encryption: ~
     mailer_auth_mode: ~
+    mailer_dsn: ~
     locale: en
     secret: ovmpmAWXRCabNlMgzlzFXDYmCFfzGv
     twofactor_auth: true
@@ -83,6 +84,7 @@ parameters:
 | mailer_port (**new in 2.4.0**) | The port when using `smtp` as the transport. This defaults to 465 if encryption is `ssl` and 25 otherwise.| false |
 | mailer_encryption (**new in 2.4.0**) | The encryption mode to use when using smtp as the transport. Valid values are `tls`, `ssl`, or `null` (indicating no encryption).| ~ |
 | mailer_auth_mode (**new in 2.4.0**) | The authentication mode to use when using smtp as the transport. Valid values are `plain`, `login`, `cram-md5`, or `null`.| ~ |
+| mailer_dsn (**new in 2.6.0**) | The mail configuration (all parameters) in one string | ~ |
 
 ## Other wallabag options
 
